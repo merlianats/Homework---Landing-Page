@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[url('foto/bg-content.jpg')] bg-cover">
     <header class="sticky top-0 z-50">
       <nav class="container flex justify-between items-center">
-        <div class="pl-28">
+        <div class="pl-14">
           <a href="index.html">
-            <img src="foto/logo.ico" alt="logo" width="130" height="130" />
+            <img src="foto/logo.ico" alt="logo" width="140" height="140" />
           </a>
         </div>
         <div>
-          <ul
-            class="flex items-center space-x-9 ml-12 text-white drop-shadow-sm"
-          >
-            <li class="font-bold text-lg hover:text-[#0F324F]">Home</li>
-            <li class="font-bold text-lg hover:text-[#0F324F]">About</li>
-            <li class="font-bold text-lg hover:text-[#0F324F]">News</li>
-            <li class="font-bold text-lg hover:text-[#0F324F]">Galery</li>
-            <li class="font-bold text-lg hover:text-[#0F324F]">Pricing</li>
-            <li class="font-bold text-lg hover:text-[#0F324F]">Contact</li>
-            <li class="pl-24">
+          <ul class="flex items-center space-x-9 text-white drop-shadow-sm -tracking-tighter">
+            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Home</li>
+            <li class="font-bold text-lg">|</li>
+            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">About</li>
+            <li class="font-bold text-lg">|</li>
+            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Galery</li>
+            <li class="font-bold text-lg">|</li>
+            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Pricing</li>
+            <li class="font-bold text-lg">|</li>
+            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Contact</li>
+            <li class="pl-28">
               <button
                 class="bg-[#0F3244] px-7 py-2 rounded-3xl capitalize font-bold hover:opacity-80 ease-in duration-200"
               >
@@ -44,7 +45,7 @@
     </header>
     <main>
       <section class="relative">
-        <div class="container py-20">
+        <div class="container py-10">
           <div class="flex flex-col items-center z-20 md:flex-row">
             <div class="text-center mb-12 ml-32 md:text-left md:w-1/2 md:pr-10">
               <h1 class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider">
@@ -61,6 +62,15 @@
             </div>
             <div class="md:w-1/2 pl-20">
               <img src="foto/addition.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[url('foto/bg-content2.jpg')] bg-cover">
+        <div class="container">
+          <div class="flex flex-col items-center pt-5">
+            <div>
+              <h1 class="pt-10">Popular Destination</h1>
             </div>
           </div>
         </div>
