@@ -5,41 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link href="/dist/output.css" rel="stylesheet"/>
+    <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-[url('foto/bg-content.jpg')] bg-cover">
-    <header class="sticky top-0 z-50">
-      <nav class="container flex justify-between items-center">
-        <div class="pl-14">
+    <header class="sticky top-4 z-[999] flex w-full items-center px-4">
+      <nav class="block max-w-screen-2xl rounded-xl px-8 backdrop-saturate-200 
+        backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white 
+        mx-auto w-full bg-white py-1.5">
+        <div class="flex w-full items-center">
           <a href="index.html">
-            <img src="foto/logo.ico" alt="logo" width="140" height="140" />
+            <img src="foto/logo.png"logo" width="140" height="140" />
           </a>
+          <div class="lg:base-auto hidden flex-grow basis-full items-center lg:flex lg-max:max-h-0">
+            <div class="flex w-full flex-col justify-end lg:flex-row">
+              <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-prussian-blue px-0 lg:!flex-row">
+                <a href="#">
+                 <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                 transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                 focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                 active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Home</div>
+                </a>
+                <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">About</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Galery</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Pricing</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Contact</div>
+                 </a>
+               </nav>
+               <div class="ml-2 flex items-center gap-2">
+                <a href="#" class="w-full sm:w-auto">
+                  <button class=" py-2 px-6 rounded-lg text-white shadow-md shadow-gray-900/10 text-sans text-center capitalize bg-blue-950">Sign up</button>
+                </a>
+                <a href="#" class="w-full sm:w-auto">
+                  <button class=" py-2 px-6 rounded-lg text-white shadow-md shadow-gray-900/10 text-sans text-center capitalize bg-blue-950">Sign in</button>
+                </a>
+               </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <ul class="flex items-center space-x-9 text-white drop-shadow-sm -tracking-tighter">
-            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Home</li>
-            <li class="font-bold text-lg">|</li>
-            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">About</li>
-            <li class="font-bold text-lg">|</li>
-            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Galery</li>
-            <li class="font-bold text-lg">|</li>
-            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Pricing</li>
-            <li class="font-bold text-lg">|</li>
-            <li class="font-bold text-lg hover:text-[#0F324F] cursor-pointer">Contact</li>
-            <li class="pl-28">
-              <button
-                class="bg-[#0F3244] px-7 py-2 rounded-3xl capitalize font-bold hover:opacity-80 ease-in duration-200"
-              >
-                Sign up
-              </button>
-            </li>
-            <li>
-              <button class="bg-[#0F3244] px-7 py-2 rounded-3xl capitalize font-bold hover:opacity-80 ease-in duration-200">
-                Sign in
-              </button>
-            </li>
-          </ul>
+        <div class="block w-full basis-full overflow-hidden" style="height:0px">
+          <div class="overflow-hidden pb-1 lg:overflow-visible">
+            <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
+              <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-prussian-blue px-0 lg:!flex-row">
+                <a href="#">
+                 <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                 transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                 focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                 active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Home</div>
+                </a>
+                <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">About</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Galery</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Pricing</div>
+                 </a>
+                 <a href="#">
+                  <div role="button" tabindex="0" class="flex items-center w-full p-3 rounded-lg text-start
+                  transition-all hover:bg-blue-950 hover:bg-opacity-80 focus:bg-bg-blue-950
+                  focus:bg-opacity-80 active:bg-blue-950 active:bg-opacity-80 focus:text-slate-800
+                  active:text-slate-800 outline-none px-4 py-2.5 text-sm text-slate-800 hover:text-primary">Contact</div>
+                 </a>
+               </nav>
+               <div class="ml-2 flex items-center gap-2">
+                <a href="#" class="w-full sm:w-auto">
+                  <button class=" py-2 px-6 rounded-lg text-white shadow-md shadow-gray-900/10 text-sans text-center capitalize bg-blue-950">Sign up</button>
+                </a>
+                <a href="#" class="w-full sm:w-auto">
+                  <button class=" py-2 px-6 rounded-lg text-white shadow-md shadow-gray-900/10 text-sans text-center capitalize bg-blue-950">Sign in</button>
+                </a>
+               </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -48,10 +115,16 @@
         <div class="container py-10">
           <div class="flex flex-col items-center z-20 md:flex-row">
             <div class="text-center mb-12 ml-32 md:text-left md:w-1/2 md:pr-10">
-              <h1 class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider">
-                Time to </h1>
-              <h1 class="mb-4 pl-40 font-bold font-dancing text-8xl text-yellow-orange -tracking-tighter">
-                Travel! </h1>
+              <h1
+                class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider"
+              >
+                Time to
+              </h1>
+              <h1
+                class="mb-4 pl-40 font-bold font-dancing text-8xl text-yellow-orange -tracking-tighter"
+              >
+                Travel!
+              </h1>
               <h2 class="mb-3 mt-10">WELCOME TO BARUDAK? WellTravel!</h2>
               <p class="text-justify mb-10 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -61,7 +134,7 @@
               </p>
             </div>
             <div class="md:w-1/2 pl-20">
-              <img src="foto/addition.png" alt="">
+              <img src="foto/addition.png" alt="" />
             </div>
           </div>
         </div>
