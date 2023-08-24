@@ -6,10 +6,12 @@ module.exports = {
       colors: {
         'prussian-blue': '#0F324F',
         'celestial-blue': '#3C9CD6',
-        'yellow-orange': '#fbb03b'
+        'yellow-orange': '#fbb03b',
+        'blue-gray': '#6699CC'
       },
       fontFamily: {
-        dancing: ['Dancing Script']
+        dancing: ['Dancing Script'],
+        'chakra-patch': ['Chakra Petch']
       }
     },
   },
