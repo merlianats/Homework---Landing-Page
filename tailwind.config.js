@@ -7,11 +7,12 @@ module.exports = {
         'prussian-blue': '#0F324F',
         'celestial-blue': '#3C9CD6',
         'yellow-orange': '#fbb03b',
-        'blue-gray': '#6699CC'
+        'blue-gray': '#6699CC',
+        'light-cyan': '#CCFAFF',
       },
       fontFamily: {
         dancing: ['Dancing Script'],
-        'chakra-patch': ['Chakra Petch']
+        chakra: ['Chakra Petch']
       }
     },
   },

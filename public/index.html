@@ -8,15 +8,42 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[url('foto/bg-content.jpg')]">
+  <body>
     <header class="sticky top-4 z-[999] flex w-full items-center px-4">
       <nav class="block max-w-screen-2xl rounded-xl px-8 backdrop-saturate-200 
         backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white 
-        mx-auto w-full bg-white py-1.5">
+        mx-auto w-full bg-white py-1.5 !pl-2 !pr-3 lg:!px-4 lg:!py-0.5">
         <div class="flex w-full items-center">
           <a href="index.html">
-            <img src="foto/logo.png"logo" width="140" height="140" />
+            <img src="foto/logo.png"logo" width="170" height="170" />
           </a>
+          <hr class="mx-2 h-8 border-r">
+          <div class="w-72 ml-4">
+            <div class="relative h-10 w-full min-w-[200px]">
+              <div class="absolute top-2/4 -right-20 grid h-5 w-5 -translate-y-2/4 place-items-center">
+                <a href="#"><img src="/public/foto/search.png" alt="Search" class="hover:cursor-pointer"></a>
+              </div>
+              <input
+                class="peer h-10 w-96 rounded-[5px] border border-blue-gray-200 bg-transparent px-3 py-2.5 !pr-9 font-sans 
+                text-sm font-normal text-blue-950 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 
+                focus:border-2 focus:border-prussian-blue focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                placeholder=""
+              />
+              <label class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex 
+              h-full w-full select-none text-[11px] font-normal leading-tight text-blue-950 transition-all before:pointer-events-none 
+              before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md 
+              before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] 
+              after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r 
+              after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] 
+              peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent 
+              peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-prussian-blue peer-focus:before:border-t-2 peer-focus:before:border-l-2 
+              peer-focus:before:border-prussian-blue peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:border-prussian-blue 
+              peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent 
+              peer-disabled:peer-placeholder-shown:text-blue-gray-500 tracking-wider opacity-75">
+                Search
+              </label>
+            </div>
+          </div>
           <div class="lg:base-auto hidden flex-grow basis-full items-center lg:flex lg-max:max-h-0">
             <div class="flex w-full flex-col justify-end lg:flex-row">
               <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-prussian-blue px-0 lg:!flex-row">
@@ -110,22 +137,20 @@
         </div>
       </nav>
     </header>
+    <hr class="opacity-70">
     <main>
-      <section class="relative">
+      <section class="relative bg-white px-32">
         <div class="container py-10">
           <div class="flex flex-col items-center z-20 md:flex-row">
-            <div class="text-center mb-12 ml-32 md:text-left md:w-1/2 md:pr-10">
-              <h1
-                class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider"
-              >
+            <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+              <h1 class="underline">----------------------------------------------</h1>
+              <h1 class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider">
                 Time to
               </h1>
-              <h1
-                class="mb-4 pl-40 font-bold font-dancing text-8xl text-yellow-orange -tracking-tighter"
-              >
+              <h1 class="mb-4 pl-40 font-bold font-dancing text-8xl text-yellow-orange -tracking-tighter">
                 Travel!
               </h1>
-              <h2 class="mb-3 mt-10">WELCOME TO BARUDAK? WellTravel!</h2>
+              <h2 class="mb-3 mt-10 font-sans font-extrabold tracking-widest text-lg text-pr">WELCOME TO BARUDAK? WellTravel!</h2>
               <p class="text-justify mb-10 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -133,102 +158,419 @@
                 nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
-            <div class="md:w-1/2 pl-20">
+            <div class="md:w-1/2 -mr-44 -mb-1 mt-3">
               <img src="foto/addition.png" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <hr class="opacity-10">
-      <section class="p-4 bg-[url('/public/foto/bg-content2.jpg')] bg-cover">
+      <section class="pt-7 px-32 pb-20 bg-[url('/public/foto/bg-content2.jpg')] bg-cover">
         <div class="container mx-auto">
-          <h1 class="block antialiased font-sans relative mb-3 mt-5 text-3xl text-center font-semibold leading-tight tracking-wider text-gray-50 md:text-4xl">Popular Destination</h1>
+          <h1 class="block antialiased font-chakra italic relative mb-3 mt-5 text-6xl text-center font-extrabold leading-tight tracking-wider text-prussian-blue md:text-4xl">Popular Destination</h1>
           <p class="block antialiased font-sans relative mb-5 font-normal leading-relaxed tracking-normal text-gray-600 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat.</p>
           <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:opacity-80">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/lombok.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Lombok</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
-                </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/labuanbajo.jpg')] 
+              bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
               </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Bali</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
-                </div>
+              <div class="relative p-6 py-14 px-6 md:px-12">
+                <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                  Labuan Bajo
+                </h2>
               </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Yogyakarta</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/rajaampat.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Malang</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Raja Ampat
+                  </h2>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Bali</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/borobudur.jpeg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Bali</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Borobudur
+                  </h2>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Bali</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/malang.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
                 </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="relative flex flex-col bg-clip-border bg-transparent text-gray-700 shadow-none overflow-hidden
-              rounded-md border-[1.5px] border-blue-gray transition-colors duration-300 hover:border-blue-100">
-                <div class="absolute top-0 h-full w-full bg-[url('/public/foto/bali.jpg')] bg-cover bg-center bg-no-repeat"></div>
-                <div class="relative z-10 p-4">
-                  <p class="block antialiased font-sans mb-1 text-center text-lg font-extrabold tracking-widest text-white">Bali</p>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-slate-200">Ini adalah pantai yang ada di Kota Lombok</p>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Bromo
+                  </h2>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/bali.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
+                </div>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Bali
+                  </h2>
+                </div>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/danautoba.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
+                </div>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Danau Toba
+                  </h2>
+                </div>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/tamanlautbunaken.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
+                </div>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Taman Laut Bunaken
+                  </h2>
+                </div>
+              </a>
+            </div>
+            <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
+            bg-white bg-clip-border text-center text-gray-700">
+              <a href="#" class="cursor-pointer">
+                <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('/public/foto/danautoba.jpg')] 
+                bg-cover bg-clip-border bg-center text-gray-700 shadow-none hover:bg-opacity-50">
+                <div class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50"></div>
+                </div>
+                <div class="relative p-6 py-14 px-6 md:px-12">
+                  <h2 class="mb-6 block font-sans text-2xl font-medium leading-[1.5] tracking-normal text-white antialiased">
+                    Danau Toba
+                  </h2>
+                </div>
+              </a>
+            </div>
           </div>  
+        </div>
+      </section>
+      <hr class="opacity-70">
+      <section class="px-32 pb-20">
+        <div class="container mx-auto pb-2 bg-cyan-100 bg-opacity-50 rounded-3xl hover:cursor-pointer hover:bg-cyan-100">
+          <div class="mx-auto my-20 lg:w-10/12 xl:w-8/12">
+            <h3 class="block antialiased tracking-wider leading-snug text-3xl font-sans font-semibold mb-5 pt-5 text-left
+            -ml-36 text-prussian-blue">Bundle Price</h3>
+            <p class="block antialiased font-sans text-inherit my-5 text-sm font-normal -ml-36 text-left
+            !text-gray-600 md:text-lg">Several price lists in the form of packages that you 
+            can choose to choose your vacation!</p>
+            <div class="mt-12 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3">
+              <div class="relative flex w-60 h-full max-w-[20rem] -ml-24 flex-col rounded-xl bg-gradient-to-tr from-blue-950 to-blue-400 bg-clip-border p-8 text-white shadow-md shadow-blue-950">
+                <div class="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
+                  <p class="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
+                    Standard
+                  </p>
+                  <h1 class="mt-6 flex justify-center gap-1 font-sans text-7xl font-normal tracking-normal text-white antialiased">
+                    <span class="mt-2 text-4xl">$</span>29
+                    <span class="self-end text-4xl">/mo</span>
+                  </h1>
+                </div>
+                <div class="p-0">
+                  <ul class="flex flex-col gap-4">
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        5 team members
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        200+ components
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        40+ built-in pages
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        1 year free updates
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        Life time technical support
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 p-0">
+                  <button
+                    class="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase 
+                    text-prussian-blue shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] 
+                    hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none 
+                    active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                    data-ripple-dark="true"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+              <div class="relative flex w-60 h-full max-w-[20rem] mx-24 flex-col rounded-xl bg-gradient-to-tr from-blue-950 to-blue-400 bg-clip-border p-8 text-white shadow-md shadow-blue-950">
+                <div class="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
+                  <p class="block font-sans text-sm font-normal uppercase leading-normal text-white antialiased">
+                    Standard
+                  </p>
+                  <h1 class="mt-6 flex justify-center gap-1 font-sans text-7xl font-normal tracking-normal text-white antialiased">
+                    <span class="mt-2 text-4xl">$</span>29
+                    <span class="self-end text-4xl">/mo</span>
+                  </h1>
+                </div>
+                <div class="p-0">
+                  <ul class="flex flex-col gap-4">
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        5 team members
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        200+ components
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        40+ built-in pages
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        1 year free updates
+                      </p>
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <span class="rounded-full border border-white/20 bg-white/20 p-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                          class="h-3 w-3"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.5 12.75l6 6 9-13.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      <p class="block font-sans text-base font-normal leading-relaxed text-inherit antialiased">
+                        Life time technical support
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-12 p-0">
+                  <button
+                    class="block w-full select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase 
+                    text-prussian-blue shadow-md shadow-blue-gray-500/10 transition-all hover:scale-[1.02] 
+                    hover:shadow-lg hover:shadow-blue-gray-500/20 focus:scale-[1.02] focus:opacity-[0.85] focus:shadow-none 
+                    active:scale-100 active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                    data-ripple-dark="true"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
