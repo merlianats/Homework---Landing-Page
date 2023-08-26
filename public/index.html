@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Well Travel</title>
     <link rel="stylesheet" href="css/style.css" />
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!--HEADER-->
     <header class="sticky top-4 z-[999] flex w-full items-center px-4">
       <nav class="block max-w-screen-2xl rounded-xl px-8 backdrop-saturate-200 
         backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white 
         mx-auto w-full bg-white py-1.5 !pl-2 !pr-3 lg:!px-4 lg:!py-0.5">
+        <!--NAVIGASI-->
         <div class="flex w-full items-center">
           <a href="index.html">
             <img src="foto/logo.png"logo" width="170" height="170" />
@@ -46,38 +48,39 @@
           </div>
           <div class="lg:base-auto hidden flex-grow basis-full items-center lg:flex lg-max:max-h-0">
             <div class="flex w-full flex-col justify-end lg:flex-row">
+              <!--MENU NAVIGASI-->
               <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-prussian-blue px-0 lg:!flex-row">
                 <a href="index.html">
                  <div tabindex="0" class="flex items-center w-full p-3 text-start
-                 transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
+                 transition-all hover:underline hover:underline-offset-2
                  focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
                  active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Home</div>
                 </a>
-                <a href="#">
+                <a href="#galery">
                   <div tabindex="0" class="flex items-center w-full p-3 text-start
-                  transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                  focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
-                  active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">About</div>
-                 </a>
-                 <a href="#">
-                  <div tabindex="0" class="flex items-center w-full p-3 text-start
-                  transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
+                  transition-all hover:underline hover:underline-offset-2
                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Galery</div>
                  </a>
-                 <a href="#">
+                 <a href="#pricing">
                   <div tabindex="0" class="flex items-center w-full p-3 text-start
-                  transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
+                  transition-all hover:underline hover:underline-offset-2
                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Pricing</div>
                  </a>
-                 <a href="#">
+                 <a href="#news">
                   <div tabindex="0" class="flex items-center w-full p-3 text-start
-                  transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
+                  transition-all hover:underline hover:underline-offset-2 
                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
+                  active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">News</div>
+                 </a>
+                 <a href="#contact">
+                  <div tabindex="0" class="flex items-center w-full p-3 text-start
+                  transition-all hover:underline hover:underline-offset-2 active:underline active:underline-offset-8 focus:text-slate-800
                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Contact</div>
                  </a>
                </nav>
+               <!--BUTTON SIGNUP & SIGNIN-->
                <div class="ml-2 flex items-center gap-2">
                 <a href="#" class="w-full sm:w-auto">
                   <button class=" py-2 px-5 rounded-lg text-white shadow-md shadow-gray-900/10 text-sans text-center 
@@ -91,38 +94,35 @@
             </div>
           </div>
         </div>
+        <!--PENEMPATAN SAAT DI SCROLL-->
         <div class="block w-full basis-full overflow-hidden" style="height:0px">
           <div class="overflow-hidden pb-1 lg:overflow-visible">
             <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
               <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-prussian-blue px-0 lg:!flex-row">
                 <a href="index.html">
                   <div tabindex="0" class="flex items-center w-full p-3 text-start
-                  transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                  focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
+                  transition-all hover:underline hover:underline-offset-2 active:underline active:underline-offset-8 focus:text-slate-800
                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Home</div>
                 </a>
-                <a href="#">
+                <a href="#galery">
                    <div tabindex="0" class="flex items-center w-full p-3 text-start
-                   transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
-                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">About</div>
-                </a>
-                <a href="#">
-                   <div tabindex="0" class="flex items-center w-full p-3 text-start
-                   transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
+                   transition-all hover:underline hover:underline-offset-2  active:underline active:underline-offset-8 focus:text-slate-800
                    active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Galery</div>
                 </a>
-                <a href="#">
+                <a href="#pricing">
+                  <div tabindex="0" class="flex items-center w-full p-3 text-start
+                  transition-all hover:underline hover:underline-offset-2
+                  focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
+                  active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Pricing</div>
+                 </a>
+                <a href="#news">
                    <div tabindex="0" class="flex items-center w-full p-3 text-start
-                   transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
-                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Pricing</div>
+                   transition-all hover:underline hover:underline-offset-2  active:underline active:underline-offset-8 focus:text-slate-800
+                   active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">News</div>
                 </a>
-                <a href="#">
+                <a href="#contact">
                    <div tabindex="0" class="flex items-center w-full p-3 text-start
-                   transition-all hover:underline hover:underline-offset-2 focus:bg-blue-950
-                   focus:bg-opacity-80 active:underline active:underline-offset-8 focus:text-slate-800
+                   transition-all hover:underline hover:underline-offset-2 f active:underline active:underline-offset-8 focus:text-slate-800
                    active:text-slate-800 outline-blue-950 px-4 py-2.5 text-sm text-slate-800">Contact</div>
                 </a>
                </nav>
@@ -143,38 +143,34 @@
     </header>
     <hr class="opacity-70">
     <main>
-      <section class="relative bg-white px-32">
-        <div class="container py-10">
-          <div class="flex flex-col items-center z-20 md:flex-row">
+      <section class="relative bg-[url('/public/foto/bg-content5.jpg')] bg-cover px-32">
+        <div class="container py-8">
+          <div class="flex flex-col items-center z-20 sm:flex-row md:flex-col lg:flex-row">
             <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-              <h1 class="underline">----------------------------------------------</h1>
               <h1 class="mb-4 font-bold font-dancing text-8xl text-prussian-blue tracking-wider">
                 Time to
               </h1>
               <h1 class="mb-4 pl-40 font-bold font-dancing text-8xl text-yellow-orange -tracking-tighter">
                 Travel!
               </h1>
-              <h2 class="mb-3 mt-10 font-sans font-extrabold tracking-widest text-lg text-pr">WELCOME TO BARUDAK? WellTravel!</h2>
-              <p class="text-justify mb-10 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <h2 class="mb-3 mt-10 font-chakra font-extrabold text-prussian-blue underline-offset-2 tracking-widest text-xl text-pr">Welcome, traveler, to WellTravel!</h2>
+              <p class="block antialiased font-sans text-inherit text-md mt-0 font-normal !text-gray-600 text-justify mb-10 leading-relaxed">
+                We are a travel service that has been established for more than 10 years. We provide the most affordable prices with excellent service. 
+                Register now to get the best discounted prices. Planning to explore Indonesia? WellTravel is the solution!
               </p>
             </div>
-            <div class="md:w-1/2 -mr-44 -mb-1 mt-3">
+            <div class="md:w-1/2">
               <img src="foto/addition.png" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="pt-7 px-32 pb-20 bg-[url('/public/foto/bg-content2.jpg')] bg-cover">
+      <!--GALERY-->
+      <section id="galery" class="pt-20 px-32 pb-24 bg-[url('/public/foto/bg-content2.jpg')] bg-cover">
         <div class="container mx-auto">
           <h1 class="block antialiased font-chakra italic relative mb-3 mt-5 text-6xl text-center font-extrabold leading-tight tracking-wider text-prussian-blue md:text-4xl">Popular Destination</h1>
-          <p class="block antialiased font-sans relative mb-5 font-normal leading-relaxed tracking-normal text-gray-600 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="block antialiased font-sans relative mb-5 font-normal leading-relaxed text-center tracking-normal text-gray-600 md:text-lg">
+            Here are popular destinations in Indonesia with a variety of natural and cultural beauty.</p>
           <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
             bg-white bg-clip-border text-center text-gray-700 hover:cursor-pointer hover:scale-105 focus:scale-105">
@@ -211,7 +207,6 @@
                     Borobudur
                   </h2>
                 </div>
-              </a>
             </div>
             <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
             bg-white bg-clip-border text-center text-gray-700 hover:cursor-pointer hover:scale-105 focus:scale-105">
@@ -260,7 +255,6 @@
                     Taman Laut Bunaken
                   </h2>
                 </div>
-              </a>
             </div>
             <div class="relative grid h-[13rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl 
             bg-white bg-clip-border text-center text-gray-700 hover:cursor-pointer hover:scale-105 focus:scale-105">
@@ -273,26 +267,24 @@
                     Mandalika
                   </h2>
                 </div>
-              </a>
             </div>
           </div>  
         </div>
       </section>
       <hr class="opacity-70">
       <!--BAGIAN HARGA-->
-      <section class="px-32 pb-20 bg-[url('/public/foto/bg-content3.jpg')] bg-cover">
-        <div class="container mx-auto pb-2 bg-cyan-400 bg-opacity-30 rounded-3xl">
-          <div class="mx-auto my-20 lg:w-10/12 xl:w-8/12">
-            <h3 class="block antialiased tracking-wider leading-snug text-3xl font-sans font-bold mb-5 pt-5 text-left
-            -ml-36 text-prussian-blue underline">Package Price</h3>
-            <p class="block antialiased font-sans text-inherit my-5 text-sm font-normal -ml-36 text-left
-            !text-gray-600 md:text-lg">Several price lists in the form of packages that you 
+      <section id="pricing" class="px-32 md:px-10 lg:px-32 pt-10 pb-18 bg-[url('/public/foto/bg-content4.jpg')] bg-cover">
+        <div class="container mx-auto pb-2 bg-[url('/public/foto/bg-content2.jpg')] bg-cover backdrop-blur-lg bg-opacity-30 rounded-3xl">
+          <div class="mx-auto my-8 lg:w-10/12 xl:w-8/12">
+            <h3 class="block antialiased tracking-normal leading-snug text-2xl md:text-3xl font-serif font-semibold mb-4 md:mb-5 pt-5 text-left 
+            -ml-36 text-blue-950 text-inherit">Package Price</h3>
+            <p class="block antialiased font-sans text-inherit my-4 text-xs -ml-36 font-normal text-gray-600 text-left md:text-gray-600 md:text-lg">Several price lists in the form of packages that you 
             can choose to choose your vacation!</p>
-            <div class="mt-10 -mx-40 gap-[22.5rem] px-2 py-2 grid grid-cols-6 grid-rows-1 overflow-x-scroll">
+            <div class="mt-10 -mx-40 gap-[24.5rem] px-2 pb-5 grid grid-cols-6 grid-rows-1 overflow-x-scroll">
               <!--LIST HARGA-->
               <!--HARGA PAKET PERTAMA-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div class="relative mx-4 mt-4 h-40 rounded-xl bg-white bg-clip-border text-gray-700">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
+                <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/1.jpg"
                     class="h-full w-full object-cover"
@@ -300,21 +292,21 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       THREEDEST
                     </p>
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       IDR 4.200.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm text-justify font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm text-justify font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 3 destinations from the THREEDEST PACKAGE list group (you can choose) for a 4-day, 3-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs 
-                    font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 hover:bg-opacity-50 focus:scale-105 focus:opacity-[0.85] active:scale-100 
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs 
+                    font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 
                     active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
@@ -323,7 +315,7 @@
                 </div>
               </div>
               <!--HARGA PAKET KEDUA-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
                 <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/2.jpg"
@@ -332,20 +324,22 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       FOURDEST
                     </p>
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       IDR 5.300.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 4 destinations from the FOURDEST PACKAGE list group (you can choose) for a 5-day, 4-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs 
+                    font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 
+                    active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                     Order
@@ -353,7 +347,7 @@
                 </div>
               </div>
               <!--HARGA PAKET KETIGA-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
                 <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/3.jpg"
@@ -362,20 +356,20 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       FIVEDEST
                     </p>
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       IDR 6.400.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 5 destinations from the FIVEDEST PACKAGE list group (you can choose) for a 6-day, 5-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                     Order
@@ -383,7 +377,7 @@
                 </div>
               </div>
               <!--HARGA PAKET KEEMPAT-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
                 <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/4.jpg"
@@ -392,20 +386,20 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       SIXDEST
                     </p>
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       IDR 7.500.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 6 destinations from the SIXDEST PACKAGE list group (you can choose) for a 7-day, 6-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                     Order
@@ -413,7 +407,7 @@
                 </div>
               </div>
               <!--HARGA PAKET KELIMA-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
                 <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/5.jpg"
@@ -422,20 +416,20 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       SEVENDEST
                     </p>
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       IDR 8.600.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 7 destinations from the SEVENDEST PACKAGE list group (you can choose) for a 8-day, 7-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                     Order
@@ -443,7 +437,7 @@
                 </div>
               </div>
               <!--HARGA PAKET KEENAM-->
-              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div class="relative flex w-[21.7rem] flex-col rounded-xl bg-blue-950 bg-clip-border text-gray-700 shadow-md">
                 <div class="relative mx-4 mt-4 h-40 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                   <img
                     src="/public/foto/6.jpg"
@@ -452,20 +446,20 @@
                 </div>
                 <div class="p-6">
                   <div class="mb-2 flex items-center justify-between">
-                    <p class="block font-sans text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-sans text-base font-medium leading-relaxed text-white antialiased">
                       EIGHTDEST
                     </p>
-                    <p class="block font-chakra text-base font-medium leading-relaxed text-blue-gray-900 antialiased">
+                    <p class="block font-chakra text-base font-medium leading-relaxed text-white antialiased">
                       IDR 9.700.000 / PAX
                     </p>
                   </div>
-                  <p class="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased opacity-75">
+                  <p class="block font-sans text-sm font-normal leading-normal text-white antialiased opacity-75">
                     Travel packages with a total of 8 destinations from the EIGHTDEST PACKAGE list group (you can choose) for a 9-day, 8-night trip.
                   </p>
                 </div>
                 <div class="p-6 pt-0">
                   <button
-                    class="block w-full select-none rounded-lg bg-blue-950/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    class="block w-full select-none rounded-lg bg-white py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                     type="button"
                   >
                     Order
@@ -516,7 +510,7 @@
       </section>
       <hr class="opacity-60">
       <!--BAGIAN KONTEN/BERITA WISATA-->
-      <section class="pt-7 px-32 pb-20 bg-[url('/public/foto/bg-content2.jpg')] bg-cover backdrop-blur-lg">
+      <section id="news" class="pt-20 px-32 pb-24 bg-[url('/public/foto/bg-content5.jpg')] bg-cover">
         <div class="container mx-auto">
           <h1 class="block antialiased font-chakra italic relative mb-3 mt-5 text-6xl text-center font-extrabold leading-tight tracking-wider text-prussian-blue md:text-4xl">TRAVEL NEWS</h1>
           <div class="mt-12 grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4">
@@ -524,120 +518,122 @@
             <div class="relative flex w-60 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
               <div class="relative mx-4 mt-10 h-44 rounded-xl ">
                 <img
-                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  src="/public/foto/rajaampat.jpg"
                   alt="img-blur-shadow"
                   layout="fill"
                   class="rounded-lg"
                 />
               </div>
               <div class="px-6 -mt-3">
-                <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  UI/UX Review Check
+                <h5 class="mb-2 block font-sans text-[17px] font-semibold leading-snug tracking-normal text-blue-gray-900 text-justify antialiased">
+                  Aduhai Sekali Pemandangan di Pulau Meoskun, Raja Ampat
                 </h5>
-                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to "Naviglio" where you can enjoy the main night life in
-                  Barcelona.
+                <p class="block font-sans text-justify text-sm font-light leading-relaxed text-inherit antialiased">
+                  Pulau Meoskun merupakan salah satu pulau yang memiliki ragam persona wisata di Raja Ampat. 
+                  Keindahannya tak kalah dengan pulau lain di Raja Ampat. (detiktravel)
                 </p>
               </div>
               <div class="p-6 pt-3">
-                <button
+                <a href="https://travel.detik.com/cerita-perjalanan/d-6852431/aduhai-sekali-pemandangan-di-pulau-meoskun-raja-ampat" target="_blank">
+                  <button
                   class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                 >
                   Read More
                 </button>
+                </a>
               </div>
             </div>
             <!--BERITA KEDUA-->
             <div class="relative flex w-60 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
               <div class="relative mx-4 mt-10 h-44 rounded-xl ">
                 <img
-                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  src="/public/foto/wisman.jpeg"
                   alt="img-blur-shadow"
                   layout="fill"
                   class="rounded-lg"
                 />
               </div>
               <div class="px-6 -mt-3">
-                <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  UI/UX Review Check
+                <h5 class="mb-2 block font-sans text-[17px] text-justify font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Wisman Inggris Beruntung Datang ke Bromo Saat Perayaan HUT ke-78 RI
                 </h5>
-                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to "Naviglio" where you can enjoy the main night life in
-                  Barcelona.
+                <p class="block font-sans text-sm text-justify font-light leading-relaxed text-inherit antialiased">
+                Ada 2 orang pasangan suami istri asal Inggris yang datang ke Bromo saat perayaan HUT ke-78 RI. 
+                Mereka mengaku beruntung bisa terlibat berbagai kegiatan. (detikJatim)
                 </p>
               </div>
               <div class="p-6 pt-3">
-                <button
+                <a href="https://www.detik.com/jatim/wisata/d-6882171/wisman-inggris-ngaku-beruntung-datang-ke-bromo-saat-perayaan-hut-ke-78-ri" target="_blank">
+                  <button
                   class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                 >
                   Read More
                 </button>
+                </a>
               </div>
             </div>
             <!--BERITA KETIGA-->
             <div class="relative flex w-60 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
               <div class="relative mx-4 mt-10 h-44 rounded-xl ">
                 <img
-                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  src="data:image/jpeg;base64,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"
                   alt="img-blur-shadow"
                   layout="fill"
                   class="rounded-lg"
                 />
               </div>
               <div class="px-6 -mt-3">
-                <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  UI/UX Review Check
+                <h5 class="mb-2 block font-sans text-[17px] text-justify font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  6 Wisata Nusa Penida, Suguhkan Pesona Alam Indah Nan Eksotis
                 </h5>
-                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to "Naviglio" where you can enjoy the main night life in
-                  Barcelona.
+                <p class="block font-sans text-sm text-justify font-light leading-relaxed text-inherit antialiased">
+                  Wisata Nusa Penida yang indah juga menawan untuk dikunjungi. (liputan6)
                 </p>
               </div>
-              <div class="p-6 pt-3">
-                <button
+              <div class="p-6 pt-24">
+                <a href="https://www.liputan6.com/hot/read/5038384/6-wisata-nusa-penida-suguhkan-pesona-alam-indah-nan-eksotis" target="_blank">
+                  <button
                   class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                 >
                   Read More
                 </button>
+                </a>
               </div>
             </div>
             <!--BERITA KEEMPAT-->
             <div class="relative flex w-60 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
               <div class="relative mx-4 mt-10 h-44 rounded-xl ">
                 <img
-                  src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  src="https://koranpelita.com/wp-content/uploads/2019/07/Jokowi-kunjungi-Taman-Nasional-Bunaken-Sulawesi-Utara-660x330.jpg"
                   alt="img-blur-shadow"
                   layout="fill"
                   class="rounded-lg"
                 />
               </div>
               <div class="px-6 -mt-3">
-                <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                  UI/UX Review Check
+                <h5 class="mb-2 block font-sans text-[17px] text-justify font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Pagi-pagi Jokowi ke Bunaken, Mau Coba Snorkeling Pak?
                 </h5>
-                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to "Naviglio" where you can enjoy the main night life in
-                  Barcelona.
+                <p class="block font-sans text-sm text-justify font-light leading-relaxed text-inherit antialiased">
+                  Presiden Joko Widodo melakukan kunjungan ke sejumlah tempat di Sulawesi Utara. Salah satu yang tak luput ia kunjungi adalah Bunaken. (detiktravel)
                 </p>
               </div>
-              <div class="p-6 pt-3">
-                <button
+              <div class="p-6 pt-10">
+                <a href="https://travel.detik.com/travel-news/d-6525515/pagi-pagi-jokowi-ke-bunaken-mau-coba-snorkeling-pak" target="_blank">
+                  <button
                   class="select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
                   type="button"
                   data-ripple-light="true"
                 >
                   Read More
                 </button>
+                </a>
               </div>
             </div>
           </div>  
@@ -665,7 +661,7 @@
                     <li class="pb-2">Term & Conditions</li>
                   </ul>
                 </div>
-                <div class="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
+                <div id="contact" class="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
                   <span class="tracking-normal font-serif text-2xl font-semibold leading-snug text-inherit
                   mb-2 !text-blue-950">Contact</span>
                   <ul class="mt-3 font-sans text-inherit text-md font-normal !text-gray-600 ">
@@ -696,9 +692,6 @@
           <p class="antialiased font-sans text-inherit text-center text-md mt-0 font-normal !text-gray-600">
             Copyright © 2023 WellTravel by Merliana Tri Susilowati</p>
         </div>
-      </section>
-      <section>
-
       </section>
     </main>
   </body>
